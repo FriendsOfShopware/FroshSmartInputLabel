@@ -3,9 +3,7 @@ import Plugin from 'src/plugin-system/plugin.class';
 export default class FroshSmartInputLabel extends Plugin {
 
     init() {
-        const groups = document.querySelectorAll('.form-group, .input-group');
-
-        groups.forEach(group => this._eventListener(group))
+        this._eventListener(this.el);
     }
 
     _eventListener(group) {
@@ -19,11 +17,11 @@ export default class FroshSmartInputLabel extends Plugin {
 
             // IE11 not support focus within
             if ( !!window.MSInputMethodContext && !!document.documentMode ) {
-                element.addEventListener('focus', function (e) {
+                element.addEventListener('focus', () => {
                     group.classList.add('has-focus');
                 });
 
-                element.addEventListener('blur', function (e) {
+                element.addEventListener('blur', () => {
                     group.classList.remove('has-focus');
                 });
             }
