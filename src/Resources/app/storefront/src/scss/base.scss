@@ -1,0 +1,43 @@
+.form-group,
+.input-group {
+    label {
+        position: absolute;
+        background: #FFF;
+        padding: 0 2px;
+        margin: 0 $input-padding-x;
+        top: $input-padding-y;
+        transition: top .2s;
+        z-index: 5;
+        pointer-events: none;
+
+        ~ .form-control {
+            &::placeholder {
+                opacity: 0;
+            }
+
+            &::-webkit-input-placeholder {
+                opacity: 0;
+            }
+        }
+    }
+
+    &.is-select {
+        label {
+            display: none;
+        }
+    }
+
+    &:focus-within,
+    &.has-value,
+    &.has-focus {
+        label {
+            top: (-($input-line-height * $input-font-size / 2));
+            width: auto;
+        }
+    }
+
+    &:focus-within,
+    .has-focus {
+        color: $input-focus-border-color;
+    }
+}

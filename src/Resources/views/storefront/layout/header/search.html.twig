@@ -1,0 +1,9 @@
+{% sw_extends "@Storefront/storefront/layout/header/search.html.twig" %}
+
+{% block layout_header_search_input %}
+    <label class="form-label" for="search">
+        {{ "header.searchPlaceholder"|trans|striptags }}
+    </label>
+
+    {{ parent() }}
+{% endblock %}
