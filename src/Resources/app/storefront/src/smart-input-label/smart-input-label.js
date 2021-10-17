@@ -3,10 +3,10 @@ import Plugin from 'src/plugin-system/plugin.class';
 export default class FroshSmartInputLabel extends Plugin {
 
     init() {
-        this._eventListener(this.el);
+        this._registerEvents(this.el);
     }
 
-    _eventListener(group) {
+    _registerEvents(group) {
         let me = this,
             element = group.querySelector('input');
 
