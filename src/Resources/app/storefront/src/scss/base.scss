@@ -10,6 +10,12 @@
         z-index: 5;
         pointer-events: none;
 
+        &.sr-only {
+            width: auto;
+            height: auto;
+            clip: unset;
+        }
+
         ~ .form-control {
             &::placeholder {
                 opacity: 0;
