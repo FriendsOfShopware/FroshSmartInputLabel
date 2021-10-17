@@ -3,4 +3,4 @@ import FroshSmartInputLabel from './smart-input-label/smart-input-label';
 
 // Register them via the existing PluginManager
 const PluginManager = window.PluginManager;
-PluginManager.register('FroshSmartInputLabel', FroshSmartInputLabel, document.querySelectorAll('.form-group, .input-group'));
+PluginManager.register('FroshSmartInputLabel', FroshSmartInputLabel, '.form-group, .input-group');
