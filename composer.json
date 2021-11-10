@@ -4,6 +4,12 @@
     "description": "This pLugin change the form labels to an smarte label placeholder style",
     "type": "shopware-platform-plugin",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "FriendsOfShopware",
+            "homepage": "https://friendsofshopware.de"
+        }
+    ],
     "require": {
         "shopware/core": "^6.4.0"
     },
@@ -14,7 +20,7 @@
             "en-GB": "Smart input label"
         },
         "description": {
-            "de-DE": "Gestalte deine Formulare smarter und platziere die Label in den Eingabefeldern als Platzhalter. Wenn das Feld ausgewählt oder befüllt wird, wird das Label platzsparend nach oben verschoben.",
+            "de-DE": "Gestalte deine Formulare smarter und platziere die Label in den Eingabefeldern als Platzhalter. Beim befüllen wird das Label platzsparend nach oben verschoben.",
             "en-GB": "Make your forms smarter and place the labels in the input fields as placeholders. When the field is selected or filled, the label is moved to the top to save space."
         },
         "manufacturerLink": {
