@@ -1,5 +1,6 @@
 {
   "name": "frosh/smart-input-label",
+  "version": "1.0.0",
   "description": "Smart Input Label",
   "type": "shopware-platform-plugin",
   "license": "MIT",
