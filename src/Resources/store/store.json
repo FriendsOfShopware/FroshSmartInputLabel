@@ -1,0 +1,29 @@
+{
+    "storeAvailabilities": [
+        "International",
+        "German"
+    ],
+    "standardLocale": "en_GB",
+    "localizations": [
+        "en_GB",
+        "de_DE"
+    ],
+    "categories": [
+        "Sonderfunktionen",
+        "ConversionOptimierung"
+    ],
+    "productType": "extension",
+    "responsive": true,
+    "tags": {
+        "en": [
+            "form",
+            "label",
+            "bootstrap"
+        ],
+        "de": [
+            "Formular",
+            "Label",
+            "bootstrap"
+        ]
+    }
+}
