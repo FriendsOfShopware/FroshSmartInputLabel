@@ -1,19 +1,34 @@
 {
-  "name": "frosh/smart-input-label",
-  "version": "1.0.0",
-  "description": "Smart Input Label",
-  "type": "shopware-platform-plugin",
-  "license": "MIT",
-  "autoload": {
-    "psr-4": {
-      "FroshSmartInputLabel\\": "src/"
+    "name": "frosh/smart-input-label",
+    "version": "1.0.0",
+    "description": "This pLugin change the form labels to an smarte label placeholder style",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "^6.4.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "Frosh\\ThumbnailProcessor\\FroshPlatformThumbnailProcessor",
+        "label": {
+            "de-DE": "Smart Input Label",
+            "en-GB": "Smart input label"
+        },
+        "description": {
+            "de-DE": "Gestalte deine Formulare smarter und platziere die Label in den Eingabefeldern als Platzhalter. Wenn das Feld ausgewählt oder befüllt wird, wird das Label platzsparend nach oben verschoben.",
+            "en-GB": "Make your forms smarter and place the labels in the input fields as placeholders. When the field is selected or filled, the label is moved to the top to save space."
+        },
+        "manufacturerLink": {
+            "de-DE": "https://github.com/FriendsOfShopware/FroshSmartInputLabel",
+            "en-GB": "https://github.com/FriendsOfShopware/FroshSmartInputLabel"
+        },
+        "supportLink": {
+            "de-DE": "https://github.com/FriendsOfShopware/FroshSmartInputLabel/issues",
+            "en-GB": "https://github.com/FriendsOfShopware/FroshSmartInputLabel/issues"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "FroshSmartInputLabel\\": "src/"
+        }
     }
-  },
-  "extra": {
-    "shopware-plugin-class": "FroshSmartInputLabel\\FroshSmartInputLabel",
-    "label": {
-      "de-DE": "Smart Input Label",
-      "en-GB": "Smart input label"
-    }
-  }
 }
